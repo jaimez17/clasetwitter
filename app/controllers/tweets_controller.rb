@@ -5,6 +5,13 @@ class TweetsController < ApplicationController
     @tweet = Tweet.new(tweet_params)
   end
 
+  def show_message_by_url
+    @tweet = Tweet.new(tweet_params)
+  end
+
+  def update_status
+    @tweet = Tweet.new(tweet_params)
+  end
 
   # GET /tweets
   # GET /tweets.json

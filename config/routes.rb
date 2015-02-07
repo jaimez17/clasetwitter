@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :tweets
   root to: "tweets#index"
   match "read_message" => "tweets#read_message", via: :post
+  match "show_message_by_id" => "tweets#show_message_by_id", via: :post
+  match "update_status" => "tweets#update_status", via: :post  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
